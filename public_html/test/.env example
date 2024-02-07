@@ -1,0 +1,21 @@
+APP_URL=https://it-support.xdark-protocol.com/test
+
+#Database mysql
+DB_HOST=localhost
+DB_USERNAME=
+DB_PASSWORD=
+DB_NAME=
+DB_CHARSET=utf8mb4
+DEBUG_MODE=false
+
+#Redis
+REDIS_HOST=localhost
+REDIS_PORT=6379
+
+# Temperature range
+MIN_TEMP=2
+MAX_TEMP=8
+
+# config sticker line
+stickerPackageId=8522
+stickerId=16581287

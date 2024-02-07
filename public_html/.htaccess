@@ -1,0 +1,15 @@
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php [L,QSA]
+
+# Redirect 404 errors to page_error_400.php
+ErrorDocument 404 /page_error_400.php
+
+#redirect error 403 to /../page_error_400.php
+ErrorDocument 403 /../page_error_400.php
+
+RewriteRule ^config$ page_error_400.php [L]
+
+
